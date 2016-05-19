@@ -9,35 +9,42 @@ html, body {
   display: inline-block;
 }
 
-panel panel-primary{
+/*.panel .panel-primary{
         color: #23b744;
         font-size: 1em
-    }
+    }*/
     
-    div div ul li a {
-        color: #23b744;
-        font-size: 2em
-    }
+div div ul li a {
+    color: #23b744;
+    font-size: 1.3em
+}
+
+.modal-header {
+    background-color: #23b744;
+    color: white;
+    text-align: center
+        
+}
+/*div .modal-footer button:first-child {
+    background-color: blue;
+    color: white
     
-/*.nav-pills1 > li {
-  float: right;
+    
 }
-.nav-pills1 > li > a {
-  border-radius: 4px;
+
+div .modal-footer button:first-child:hover {
+    background-color: lightsteelblue;
+    color: black;
+    
 }
-.nav-pills1 > li + li {
-  margin-left: 2px;
-}
-.nav-pills1 > li.active > a,
-.nav-pills1 > li.active > a:hover,
-.nav-pills1 > li.active > a:focus {
-  color: aliceblue;
-  background-color: blue;
-}
-.nav-stacked1 > li {
-  float: none;
-}
-.nav-stacked1 > li + li {
-  margin-top: 2px;
-  margin-left: 0;
+
+div .modal-footer button   {
+    background-color: red;
+    color: white
 }*/
+div .panel .panel-heading {
+    background-color: #23b744;
+    color: white;
+    text-align: center;
+    font-size: 1.5em
+}

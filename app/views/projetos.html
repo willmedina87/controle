@@ -1,4 +1,4 @@
-<div class="panel panel-default" style = "margin-top: 1em">
+<div class="panel panel-primary" style = "margin-top: 1em">
    <div class="panel-heading">Projetos</div>
    <div class="panel-body">
      <div ng-show="projetos.length > 0">
@@ -10,7 +10,7 @@
            </thead>
             <tbody>
                <tr ng-repeat="projeto in projetos track by $index">
-                 <td>{{ projeto.nome }}</td>
+                   <td><a>{{ projeto.nome }}</a></td>
                </tr>
             </tbody>
          </table>
@@ -23,7 +23,7 @@
     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Novo Projeto
 </button>
 
-<div class="panel panel-default" style = "margin-top: 1em">
+<div class="panel panel-primary" style = "margin-top: 1em">
    <div class="panel-heading">Subprojetos</div>
    <div class="panel-body">
      <div ng-show="subprojetos.length > 0">
@@ -37,7 +37,7 @@
          <div class="col-md-6 text-right">
            <div class="form-inline form-group">
              <label for="filter-list">Busca </label>
-             <input type="text" class="form-control pagination" id="filter-list" placeholder="Nome do subprojeto" ng-model="searchText.nome">
+             <input type="text" class="form-control pagination" id="filter-list" placeholder=" Subprojeto" ng-model="searchText.nome">
            </div>
          </div>
        </div>
