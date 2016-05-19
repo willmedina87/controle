@@ -30,9 +30,9 @@ div div ul li a {
     color: white
     
     
-}
+}*/
 
-div .modal-footer button:first-child:hover {
+/*div .modal-footer button:first-child:hover {
     background-color: lightsteelblue;
     color: black;
     
@@ -42,9 +42,11 @@ div .modal-footer button   {
     background-color: red;
     color: white
 }*/
+
 div .panel .panel-heading {
     background-color: #23b744;
     color: white;
     text-align: center;
     font-size: 1.5em
 }
+

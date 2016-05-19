@@ -10,7 +10,7 @@
            </thead>
             <tbody>
                <tr ng-repeat="projeto in projetos track by $index">
-                   <td><a>{{ projeto.nome }}</a></td>
+                   <td>{{ projeto.nome }}</td>
                </tr>
             </tbody>
          </table>
@@ -61,7 +61,7 @@
           previous-text = "Anterior" next-text="Próximo" first-text="Primeiro" last-text="Último"></uib-pagination>
         </div>
       </div>
-      Existem {{subprojetos.length}} subprojetos.
+       <strong>Existem {{subprojetos.length}} subprojetos</strong>
    </div>
 </div>
 

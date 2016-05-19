@@ -9,13 +9,13 @@
               </tr>
            </thead>
             <tbody>
-               <tr ng-repeat="fase in fases track by $index" ng-click="criaFase(fase)">
-                 <td>{{ fase.nome }}</td>
+                <tr ng-repeat="fase in fases track by $index" ng-click="criaFase(fase)"><a href="">
+                <td>{{ fase.nome }}</td></a>
                </tr>
             </tbody>
          </table>
       </div>
-      Existem {{fases.length}} fases.
+       <strong>Existem {{fases.length}} fases.</strong>
    </div>
 </div>
 
@@ -37,8 +37,21 @@
          </div>
          <div class="col-md-6 text-right">
            <div class="form-inline form-group">
-             <label for="filter-list">Busca </label>
-             <span class="left-inner-addon"><i class="glyphicon glyphicon-search"><input type="text" class="form-control pagination" id="filter-list" placeholder=" Subfase" ng-model="searchText.nome"></i></span>
+             <label for="filter-list"></label>
+     <!--        <div class="input-group">
+                 <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-search"></i>                     
+                 </span>  
+                 <input type="text" class="form-control pagination" id="filter-list" placeholder=" Subfase" ng-model="searchText.nome">
+                 
+             </div>  -->
+             
+             <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-search"></i>
+                </span>
+                <input type="text"  class="form-control " id="filter-list" placeholder=" Subfase" ng-model="searchText.nome"/>
+            </div>
            </div>
          </div>
        </div>
@@ -64,7 +77,7 @@
           previous-text = "Anterior" next-text="Próximo" first-text="Primeiro" last-text="Último"></uib-pagination>
         </div>
       </div>
-      Existem {{subfases.length}} subfases.
+       <strong>Existem {{subfases.length}} subfases</strong>
    </div>
 </div>
 
