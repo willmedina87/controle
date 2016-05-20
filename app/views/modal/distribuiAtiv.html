@@ -7,7 +7,7 @@
       <label class="control-label col-sm-2">Operadores</label>
       <div class="col-sm-10">
         <ui-select multiple tagging="tagTransform" tagging-label="new tag" ng-model="ativ.filaOperador" theme="select2" ng-disabled="disabled" style="width: 400px;">
-          <ui-select-match placeholder="Selecione uma ou mais usuarios">{{$item.postGrad}} {{$item.nomeGuerra}}</ui-select-match>
+          <ui-select-match placeholder="Selecione um ou mais usuarios">{{$item.postGrad}} {{$item.nomeGuerra}}</ui-select-match>
           <ui-select-choices repeat="usuario in usuarios | propsFilter: {nome: $select.search}">
             <small>
               {{usuario.postGrad}} {{usuario.nomeGuerra}}
@@ -24,7 +24,7 @@
     </div>
     </form>
     <div class="modal-footer">
-        <button class="btn btn-primary" ng-disabled="criaAtivForm.$invalid" type="button" ng-click="finaliza()">Finaliza</button>
-        <button class="btn btn-default" type="button" ng-click="cancel()">Cancela</button>
+        <button class="btn btn-success" ng-disabled="criaAtivForm.$invalid" type="button" ng-click="finaliza()">Finaliza</button>
+        <button class="btn btn-danger" type="button" ng-click="cancel()">Cancela</button>
     </div>
 </div>
